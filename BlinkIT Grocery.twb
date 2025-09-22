@@ -1,0 +1,2468 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0818.1050                               -->
+<workbook original-version='18.1' source-build='2025.2.2 (20252.25.0818.1050)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (Blinkit Grocery Dateset)' inline='true' name='federated.1nqe15n10baakp1bdk4em11jkmed' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Blinkit Grocery Dateset' name='excel-direct.0kp0gkr0g8uwub17jgx3x1neh9ib'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/IntellibI/PROJECTS/Tableau_BlinkIT/Blinkit Grocery Dateset.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0kp0gkr0g8uwub17jgx3x1neh9ib' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:L8524:no:A1:L8524:0' header='yes' outcome='6'>
+            <column datatype='string' name='Item Fat Content' ordinal='0' />
+            <column datatype='string' name='Item Identifier' ordinal='1' />
+            <column datatype='string' name='Item Type' ordinal='2' />
+            <column datatype='date' date-parse-format='yyyy' name='Outlet Establishment Year' ordinal='3' />
+            <column datatype='string' name='Outlet Identifier' ordinal='4' />
+            <column datatype='string' name='Outlet Location Type' ordinal='5' />
+            <column datatype='string' name='Outlet Size' ordinal='6' />
+            <column datatype='string' name='Outlet Type' ordinal='7' />
+            <column datatype='real' name='Item Visibility' ordinal='8' />
+            <column datatype='real' name='Item Weight' ordinal='9' />
+            <column datatype='real' name='Sales' ordinal='10' />
+            <column datatype='real' name='Rating' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>3</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:L8524:no:A1:L8524:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item Fat Content</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Item Fat Content]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Item Fat Content</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item Identifier</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Item Identifier]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Item Identifier</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Item Type]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Item Type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Outlet Establishment Year</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Outlet Establishment Year]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Outlet Establishment Year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Outlet Identifier</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Outlet Identifier]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Outlet Identifier</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Outlet Location Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Outlet Location Type]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Outlet Location Type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Outlet Size</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Outlet Size]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Outlet Size</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Outlet Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Outlet Type]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Outlet Type</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item Visibility</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Item Visibility]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Item Visibility</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item Weight</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Item Weight]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Item Weight</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sales]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Sales</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rating]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Rating</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Item Fat Content]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Outlet Location Type]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Outlet Size]' role='dimension' type='nominal' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_4B899B70835B4CC5909392AA8D5BE097]' role='measure' type='quantitative' />
+      <column-instance column='[Item Fat Content]' derivation='None' name='[none:Item Fat Content:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Outlet Location Type]' derivation='None' name='[none:Outlet Location Type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Outlet Size]' derivation='None' name='[none:Outlet Size:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Outlet Location Type)' hidden='true' name='[Action (Outlet Location Type)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Outlet Location Type]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Outlet Location Type,Outlet Size)' hidden='true' name='[Action (Outlet Location Type,Outlet Size)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Outlet Location Type]' />
+          <groupfilter function='level-members' level='[Outlet Size]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Outlet Size)' hidden='true' name='[Action (Outlet Size)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Outlet Size]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Inclusions (Outlet Location Type,Outlet Size)]' name-style='unqualified' user:auto-column='include'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Outlet Location Type:nk]' />
+          <groupfilter function='level-members' level='[none:Outlet Size:nk]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/akash/AppData/Local/Temp/TableauTemp/#TableauTemp_1i8em931cedm9y1bgg4ht0zbev6h.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/19/2025 09:22:54 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Item Fat Content</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Item Fat Content]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item Fat Content</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Sheet1_4B899B70835B4CC5909392AA8D5BE097]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item Identifier</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Item Identifier]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item Identifier</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1897</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Sheet1_4B899B70835B4CC5909392AA8D5BE097]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Item Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item Type</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Sheet1_4B899B70835B4CC5909392AA8D5BE097]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Outlet Establishment Year</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Outlet Establishment Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Outlet Establishment Year</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_4B899B70835B4CC5909392AA8D5BE097]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Outlet Identifier</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Outlet Identifier]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Outlet Identifier</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Sheet1_4B899B70835B4CC5909392AA8D5BE097]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Outlet Location Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Outlet Location Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Outlet Location Type</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Sheet1_4B899B70835B4CC5909392AA8D5BE097]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Outlet Size</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Outlet Size]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Outlet Size</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Sheet1_4B899B70835B4CC5909392AA8D5BE097]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Outlet Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Outlet Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Outlet Type</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Sheet1_4B899B70835B4CC5909392AA8D5BE097]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item Visibility</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Item Visibility]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item Visibility</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7911</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_4B899B70835B4CC5909392AA8D5BE097]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item Weight</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Item Weight]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item Weight</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>483</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_4B899B70835B4CC5909392AA8D5BE097]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sales</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sales</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3523</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_4B899B70835B4CC5909392AA8D5BE097]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rating</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rating</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>42</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_4B899B70835B4CC5909392AA8D5BE097]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Item Fat Content:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Regular&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Low Fat&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Outlet Size:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Medium&quot;</bucket>
+            </map>
+            <map to='#a5db96'>
+              <bucket>&quot;Small&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;High&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Outlet Location Type:nk]' type='palette'>
+            <map to='#146c36'>
+              <bucket>&quot;Tier 3&quot;</bucket>
+            </map>
+            <map to='#76af56'>
+              <bucket>&quot;Tier 2&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Tier 1&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_4B899B70835B4CC5909392AA8D5BE097'>
+            <properties context=''>
+              <relation connection='excel-direct.0kp0gkr0g8uwub17jgx3x1neh9ib' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:L8524:no:A1:L8524:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Item Fat Content' ordinal='0' />
+                  <column datatype='string' name='Item Identifier' ordinal='1' />
+                  <column datatype='string' name='Item Type' ordinal='2' />
+                  <column datatype='date' date-parse-format='yyyy' name='Outlet Establishment Year' ordinal='3' />
+                  <column datatype='string' name='Outlet Identifier' ordinal='4' />
+                  <column datatype='string' name='Outlet Location Type' ordinal='5' />
+                  <column datatype='string' name='Outlet Size' ordinal='6' />
+                  <column datatype='string' name='Outlet Type' ordinal='7' />
+                  <column datatype='real' name='Item Visibility' ordinal='8' />
+                  <column datatype='real' name='Item Weight' ordinal='9' />
+                  <column datatype='real' name='Sales' ordinal='10' />
+                  <column datatype='real' name='Rating' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='AVG RATING'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Blinkit Grocery Dateset)' name='federated.1nqe15n10baakp1bdk4em11jkmed' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nqe15n10baakp1bdk4em11jkmed'>
+            <column datatype='string' name='[Outlet Location Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Outlet Size]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Rating]' role='measure' type='quantitative' />
+            <column-instance column='[Rating]' derivation='Avg' name='[avg:Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Outlet Location Type]' derivation='None' name='[none:Outlet Location Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Outlet Size]' derivation='None' name='[none:Outlet Size:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Location Type)]'>
+            <groupfilter function='level-members' level='[Outlet Location Type]' user:ui-action-filter='[Action2_1FDFE4DCC9A74F05B76604BF490BD2DA]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Size)]'>
+            <groupfilter function='level-members' level='[Outlet Size]' user:ui-action-filter='[Action2_4523F15AFFC34DE4A6DCA7E70BCFDF4A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Outlet Location Type:nk]' member='&quot;Tier 2&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:Outlet Size:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Location Type)]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Size)]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1nqe15n10baakp1bdk4em11jkmed].[avg:Rating:qk]' value='n#,##0.0;-#,##0.0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#63be4f' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1nqe15n10baakp1bdk4em11jkmed].[avg:Rating:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Segoe UI Semibold' fontsize='14'><![CDATA[<[federated.1nqe15n10baakp1bdk4em11jkmed].[avg:Rating:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontname='Segoe UI Semibold' fontsize='10' underline='true'>AVG RATING</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{94712C66-1B86-411A-9C35-28F79ABF8C51}' />
+    </worksheet>
+    <worksheet name='AVG SALES'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Blinkit Grocery Dateset)' name='federated.1nqe15n10baakp1bdk4em11jkmed' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nqe15n10baakp1bdk4em11jkmed'>
+            <column datatype='string' name='[Outlet Location Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Outlet Size]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Sales]' derivation='Avg' name='[avg:Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Outlet Location Type]' derivation='None' name='[none:Outlet Location Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Outlet Size]' derivation='None' name='[none:Outlet Size:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Location Type)]'>
+            <groupfilter function='level-members' level='[Outlet Location Type]' user:ui-action-filter='[Action2_1FDFE4DCC9A74F05B76604BF490BD2DA]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Size)]'>
+            <groupfilter function='level-members' level='[Outlet Size]' user:ui-action-filter='[Action2_4523F15AFFC34DE4A6DCA7E70BCFDF4A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Outlet Location Type:nk]' member='&quot;Tier 2&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:Outlet Size:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Location Type)]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Size)]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1nqe15n10baakp1bdk4em11jkmed].[avg:Sales:qk]' value='n#,##0;-#,##0' />
+            <format attr='color' value='#ffd200' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#63be4f' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffd200' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1nqe15n10baakp1bdk4em11jkmed].[avg:Sales:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#000000' fontname='Segoe UI Semibold' fontsize='14'><![CDATA[<[federated.1nqe15n10baakp1bdk4em11jkmed].[avg:Sales:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#000000' fontname='Segoe UI Semibold' fontsize='10' underline='true'>AVG SALES</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{62FDF202-4DA1-48F6-BE64-04350317F6C8}' />
+    </worksheet>
+    <worksheet name='FAT BY OUTLET'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Blinkit Grocery Dateset)' name='federated.1nqe15n10baakp1bdk4em11jkmed' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nqe15n10baakp1bdk4em11jkmed'>
+            <column datatype='string' name='[Item Fat Content]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Outlet Location Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Outlet Size]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Item Fat Content]' derivation='None' name='[none:Item Fat Content:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Outlet Location Type]' derivation='None' name='[none:Outlet Location Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Outlet Size]' derivation='None' name='[none:Outlet Size:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Location Type)]'>
+            <groupfilter function='level-members' level='[Outlet Location Type]' user:ui-action-filter='[Action2_1FDFE4DCC9A74F05B76604BF490BD2DA]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Size)]'>
+            <groupfilter function='level-members' level='[Outlet Size]' user:ui-action-filter='[Action2_4523F15AFFC34DE4A6DCA7E70BCFDF4A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Outlet Location Type:nk]' member='&quot;Tier 2&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:Outlet Size:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Location Type)]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Size)]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]' value='c&quot;$&quot;#,##0,,.00M;(&quot;$&quot;#,##0,,.00M)' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]' value='c&quot;$&quot;#,##0,,.00M;(&quot;$&quot;#,##0,,.00M)' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='rows' value='0' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Item Fat Content:nk]' />
+              <text column='[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]</rows>
+        <cols>([federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk] / [federated.1nqe15n10baakp1bdk4em11jkmed].[none:Item Fat Content:nk])</cols>
+      </table>
+      <simple-id uuid='{26BF472B-D6ED-45F2-943E-9EF432C5EC88}' />
+    </worksheet>
+    <worksheet name='FAT CONTENT'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Blinkit Grocery Dateset)' name='federated.1nqe15n10baakp1bdk4em11jkmed' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nqe15n10baakp1bdk4em11jkmed'>
+            <column datatype='string' name='[Item Fat Content]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Outlet Location Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Outlet Size]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Item Fat Content]' derivation='None' name='[none:Item Fat Content:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Outlet Location Type]' derivation='None' name='[none:Outlet Location Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Outlet Size]' derivation='None' name='[none:Outlet Size:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Location Type)]'>
+            <groupfilter function='level-members' level='[Outlet Location Type]' user:ui-action-filter='[Action2_1FDFE4DCC9A74F05B76604BF490BD2DA]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Size)]'>
+            <groupfilter function='level-members' level='[Outlet Size]' user:ui-action-filter='[Action2_4523F15AFFC34DE4A6DCA7E70BCFDF4A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Outlet Location Type:nk]' member='&quot;Tier 2&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:Outlet Size:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Location Type)]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Size)]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]' value='c&quot;$&quot;#,##0,.00K;(&quot;$&quot;#,##0,.00K)' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Item Fat Content:nk]' />
+              <wedge-size column='[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]' />
+              <size column='[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]' />
+              <text column='[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]' />
+              <text column='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Item Fat Content:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]</run>
+                <run>&gt;&#10;&lt;</run>
+                <run>[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Item Fat Content:nk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9670165777206421' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-range-scope' value='pane' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Item Fat Content:nk]</field>
+                  <field>[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Regular&quot;</value>
+                <value>425361.80439999985</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{277C8DA0-4375-4297-B104-C05E8745C9A2}' />
+    </worksheet>
+    <worksheet name='ITEM TYPE'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Blinkit Grocery Dateset)' name='federated.1nqe15n10baakp1bdk4em11jkmed' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nqe15n10baakp1bdk4em11jkmed'>
+            <column datatype='string' name='[Item Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Outlet Location Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Outlet Size]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Item Type]' derivation='None' name='[none:Item Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Outlet Location Type]' derivation='None' name='[none:Outlet Location Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Outlet Size]' derivation='None' name='[none:Outlet Size:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Location Type)]'>
+            <groupfilter function='level-members' level='[Outlet Location Type]' user:ui-action-filter='[Action2_1FDFE4DCC9A74F05B76604BF490BD2DA]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Size)]'>
+            <groupfilter function='level-members' level='[Outlet Size]' user:ui-action-filter='[Action2_4523F15AFFC34DE4A6DCA7E70BCFDF4A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Outlet Location Type:nk]' member='&quot;Tier 2&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:Outlet Size:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Item Type:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Location Type)]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Size)]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' field='[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]' value='auto' />
+            <format attr='text-format' field='[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]' value='c&quot;$&quot;#,##0,,.00M;(&quot;$&quot;#,##0,,.00M)' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <size column='[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]' />
+              <text column='[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#f1ce63' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Item Type:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{1A5BA401-EB02-4E25-91CD-D713907EB9F5}' />
+    </worksheet>
+    <worksheet name='NO OF ITEMS'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Blinkit Grocery Dateset)' name='federated.1nqe15n10baakp1bdk4em11jkmed' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nqe15n10baakp1bdk4em11jkmed'>
+            <column datatype='string' name='[Outlet Location Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Outlet Size]' role='dimension' type='nominal' />
+            <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_4B899B70835B4CC5909392AA8D5BE097]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Sheet1_4B899B70835B4CC5909392AA8D5BE097]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Sheet1_4B899B70835B4CC5909392AA8D5BE097:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Outlet Location Type]' derivation='None' name='[none:Outlet Location Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Outlet Size]' derivation='None' name='[none:Outlet Size:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Location Type)]'>
+            <groupfilter function='level-members' level='[Outlet Location Type]' user:ui-action-filter='[Action2_1FDFE4DCC9A74F05B76604BF490BD2DA]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Size)]'>
+            <groupfilter function='level-members' level='[Outlet Size]' user:ui-action-filter='[Action2_4523F15AFFC34DE4A6DCA7E70BCFDF4A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Outlet Location Type:nk]' member='&quot;Tier 2&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:Outlet Size:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Location Type)]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Size)]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#f1ce63' />
+            <format attr='color' field='[federated.1nqe15n10baakp1bdk4em11jkmed].[__tableau_internal_object_id__].[cnt:Sheet1_4B899B70835B4CC5909392AA8D5BE097:qk]' value='#e15759' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#63be4f' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1nqe15n10baakp1bdk4em11jkmed].[__tableau_internal_object_id__].[cnt:Sheet1_4B899B70835B4CC5909392AA8D5BE097:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#000000' fontname='Segoe UI Semibold' fontsize='14'><![CDATA[<[federated.1nqe15n10baakp1bdk4em11jkmed].[__tableau_internal_object_id__].[cnt:Sheet1_4B899B70835B4CC5909392AA8D5BE097:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#000000' fontname='Segoe UI Semibold' fontsize='10' underline='true'>NO OF ITEMS</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-transparency' value='139' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{4AE546FD-2041-481F-9440-578FDE2409A1}' />
+    </worksheet>
+    <worksheet name='OUTLET ESTABLISHMENT'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Blinkit Grocery Dateset)' name='federated.1nqe15n10baakp1bdk4em11jkmed' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nqe15n10baakp1bdk4em11jkmed'>
+            <column datatype='date' name='[Outlet Establishment Year]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Outlet Location Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Outlet Size]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Outlet Location Type]' derivation='None' name='[none:Outlet Location Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Outlet Size]' derivation='None' name='[none:Outlet Size:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Outlet Establishment Year]' derivation='Year' name='[yr:Outlet Establishment Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Location Type)]'>
+            <groupfilter function='level-members' level='[Outlet Location Type]' user:ui-action-filter='[Action2_1FDFE4DCC9A74F05B76604BF490BD2DA]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Size)]'>
+            <groupfilter function='level-members' level='[Outlet Size]' user:ui-action-filter='[Action2_4523F15AFFC34DE4A6DCA7E70BCFDF4A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Outlet Location Type:nk]' member='&quot;Tier 2&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:Outlet Size:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Location Type)]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Size)]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]' value='c&quot;$&quot;#,##0,.00K;(&quot;$&quot;#,##0,.00K)' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]' palette='green_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#f1ce63' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]</rows>
+        <cols>[federated.1nqe15n10baakp1bdk4em11jkmed].[yr:Outlet Establishment Year:ok]</cols>
+      </table>
+      <simple-id uuid='{4D388CA6-6C09-412B-A7FC-09636DCA07E7}' />
+    </worksheet>
+    <worksheet name='OUTLET LOCATION'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Blinkit Grocery Dateset)' name='federated.1nqe15n10baakp1bdk4em11jkmed' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nqe15n10baakp1bdk4em11jkmed'>
+            <column datatype='string' name='[Outlet Location Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Outlet Size]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Outlet Location Type]' derivation='None' name='[none:Outlet Location Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Outlet Size]' derivation='None' name='[none:Outlet Size:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Size)]'>
+            <groupfilter function='level-members' level='[Outlet Size]' user:ui-action-filter='[Action2_4523F15AFFC34DE4A6DCA7E70BCFDF4A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Outlet Location Type:nk]' member='&quot;Tier 2&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:Outlet Size:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Size)]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]' value='Outlet Location'>
+              <formatted-text>
+                <run>Outlet Location</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]' />
+              <text column='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]' />
+              <text column='[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]' />
+              <color column='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8A1B0728-3B5B-46B2-89D5-BC4B6BE9EBC4}' />
+    </worksheet>
+    <worksheet name='OUTLET SIZE'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Blinkit Grocery Dateset)' name='federated.1nqe15n10baakp1bdk4em11jkmed' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nqe15n10baakp1bdk4em11jkmed'>
+            <column datatype='string' name='[Outlet Location Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Outlet Size]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Outlet Location Type]' derivation='None' name='[none:Outlet Location Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Outlet Size]' derivation='None' name='[none:Outlet Size:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Location Type)]'>
+            <groupfilter function='level-members' level='[Outlet Location Type]' user:ui-action-filter='[Action2_1FDFE4DCC9A74F05B76604BF490BD2DA]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Outlet Location Type:nk]' member='&quot;Tier 2&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:Outlet Size:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Location Type)]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]' />
+              <size column='[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]' />
+              <text column='[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{95501BBB-5F54-42F5-A5B6-93F5C466169A}' />
+    </worksheet>
+    <worksheet name='OUTLET TYPE'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Blinkit Grocery Dateset)' name='federated.1nqe15n10baakp1bdk4em11jkmed' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nqe15n10baakp1bdk4em11jkmed'>
+            <column datatype='real' name='[Item Visibility]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Outlet Location Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Outlet Size]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Outlet Type]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Rating]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_4B899B70835B4CC5909392AA8D5BE097]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Sheet1_4B899B70835B4CC5909392AA8D5BE097]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Sheet1_4B899B70835B4CC5909392AA8D5BE097:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Rating]' derivation='Avg' name='[avg:Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Outlet Location Type]' derivation='None' name='[none:Outlet Location Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Outlet Size]' derivation='None' name='[none:Outlet Size:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Outlet Type]' derivation='None' name='[none:Outlet Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Item Visibility]' derivation='Sum' name='[sum:Item Visibility:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Item Visibility:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1nqe15n10baakp1bdk4em11jkmed].[avg:Rating:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1nqe15n10baakp1bdk4em11jkmed].[__tableau_internal_object_id__].[cnt:Sheet1_4B899B70835B4CC5909392AA8D5BE097:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Location Type)]'>
+            <groupfilter function='level-members' level='[Outlet Location Type]' user:ui-action-filter='[Action2_1FDFE4DCC9A74F05B76604BF490BD2DA]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Size)]'>
+            <groupfilter function='level-members' level='[Outlet Size]' user:ui-action-filter='[Action2_4523F15AFFC34DE4A6DCA7E70BCFDF4A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Outlet Location Type:nk]' member='&quot;Tier 2&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:Outlet Size:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[:Measure Names]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Location Type)]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Size)]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1nqe15n10baakp1bdk4em11jkmed].[__tableau_internal_object_id__].[cnt:Sheet1_4B899B70835B4CC5909392AA8D5BE097:qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Item Visibility:qk]' scope='cols' value='false' />
+            <format attr='tick-color' field='[federated.1nqe15n10baakp1bdk4em11jkmed].[__tableau_internal_object_id__].[cnt:Sheet1_4B899B70835B4CC5909392AA8D5BE097:qk]' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' value='#59a14f' />
+            <format attr='width' field='[federated.1nqe15n10baakp1bdk4em11jkmed].[:Measure Names]' value='133' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='width' field='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Type:nk]' value='180' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]' palette='green_gold_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.1nqe15n10baakp1bdk4em11jkmed].[__tableau_internal_object_id__].[cnt:Sheet1_4B899B70835B4CC5909392AA8D5BE097:qk]' max='4000' min='100' palette='green_gold_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Item Visibility:qk]' palette='green_gold_10_0' type='interpolated' />
+            <encoding attr='size-bar' field='[federated.1nqe15n10baakp1bdk4em11jkmed].[__tableau_internal_object_id__].[cnt:Sheet1_4B899B70835B4CC5909392AA8D5BE097:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1nqe15n10baakp1bdk4em11jkmed].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Type:nk]</rows>
+        <cols>[federated.1nqe15n10baakp1bdk4em11jkmed].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{6BCA1B96-702D-468E-BF7A-DE99A8D78C2A}' />
+    </worksheet>
+    <worksheet name='TOTAL SALES'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Blinkit Grocery Dateset)' name='federated.1nqe15n10baakp1bdk4em11jkmed' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nqe15n10baakp1bdk4em11jkmed'>
+            <column datatype='string' name='[Outlet Location Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Outlet Size]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Outlet Location Type]' derivation='None' name='[none:Outlet Location Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Outlet Size]' derivation='None' name='[none:Outlet Size:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Location Type)]'>
+            <groupfilter function='level-members' level='[Outlet Location Type]' user:ui-action-filter='[Action2_1FDFE4DCC9A74F05B76604BF490BD2DA]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Size)]'>
+            <groupfilter function='level-members' level='[Outlet Size]' user:ui-action-filter='[Action2_4523F15AFFC34DE4A6DCA7E70BCFDF4A]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Outlet Location Type:nk]' member='&quot;Tier 2&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:Outlet Size:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Location Type)]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[Action (Outlet Size)]</column>
+            <column>[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]' value='c&quot;$&quot;#,##0,,.00M;(&quot;$&quot;#,##0,,.00M)' />
+            <format attr='height' value='74' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#63be4f' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='14'><![CDATA[<[federated.1nqe15n10baakp1bdk4em11jkmed].[sum:Sales:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontname='Segoe UI Variable Text Semibold' fontsize='10' underline='true'>TOTAL SALES</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0370CD62-52FC-4EFB-A55E-3C0FC7C915C9}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='Sheet1 (Blinkit Grocery Dateset)' name='federated.1nqe15n10baakp1bdk4em11jkmed' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1nqe15n10baakp1bdk4em11jkmed'>
+        <column datatype='string' name='[Outlet Location Type]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Outlet Size]' role='dimension' type='nominal' />
+        <column-instance column='[Outlet Location Type]' derivation='None' name='[none:Outlet Location Type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Outlet Size]' derivation='None' name='[none:Outlet Size:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='38' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98152' id='41' param='horz' type-v2='layout-flow' w='99002' x='499' y='924'>
+            <zone h='98152' id='39' type-v2='layout-basic' w='99002' x='499' y='924' />
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='97229' id='13' param='vert' type-v2='layout-flow' w='13092' x='561' y='1732'>
+          <zone forceUpdate='true' h='8314' id='14' type-v2='text' w='13092' x='561' y='1732'>
+            <formatted-text>
+              <run fontalignment='1' fontcolor='#000000' fontname='Segoe UI Black' fontsize='24'>Blink</run>
+              <run fontalignment='1' fontcolor='#63be4f' fontname='Segoe UI Black' fontsize='24'>it</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='9469' id='15' name='TOTAL SALES' show-title='false' w='13092' x='561' y='10046'>
+            <layout-cache fixed-size-h='74' type-h='fixed' type-w='fixed' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='8430' id='16' name='AVG RATING' show-title='false' w='13092' x='561' y='19515'>
+            <layout-cache fixed-size-h='65' type-h='fixed' type-w='fixed' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='8430' id='17' name='AVG SALES' show-title='false' w='13092' x='561' y='27945'>
+            <layout-cache fixed-size-h='65' type-h='fixed' type-w='fixed' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone fixed-size='69' h='8892' id='18' is-fixed='true' name='NO OF ITEMS' show-title='false' w='13092' x='561' y='36375'>
+            <layout-cache type-h='fixed' type-w='fixed' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#ffd200' />
+          </zone-style>
+        </zone>
+        <zone h='31871' id='19' name='FAT CONTENT' w='23504' x='13716' y='1732'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='6467' id='20' leg-item-layout='vert' name='FAT CONTENT' pane-specification-id='0' param='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Item Fat Content:nk]' show-title='false' type-v2='color' w='7606' x='28741' y='2771' />
+        <zone h='31755' id='21' name='FAT BY OUTLET' w='33292' x='37219' y='1732'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='33256' id='22' name='OUTLET SIZE' w='23504' x='13716' y='33487'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='11663' id='23' name='OUTLET SIZE' pane-specification-id='0' param='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]' type-v2='color' w='6671' x='30112' y='33487' />
+        <zone h='33141' id='24' name='OUTLET LOCATION' w='33292' x='37219' y='33487'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='11663' id='25' name='OUTLET LOCATION' pane-specification-id='0' param='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]' type-v2='color' w='9102' x='61347' y='33603' />
+        <zone h='32217' id='26' name='OUTLET ESTABLISHMENT' w='42830' x='13716' y='66628'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='64896' id='27' name='ITEM TYPE' w='29364' x='70511' y='1732'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='32102' id='29' name='OUTLET TYPE' w='43267' x='56546' y='66628'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='3464' id='32' type-v2='text' w='6671' x='1122' y='48383'>
+          <formatted-text>
+            <run bold='true' fontname='Segoe UI Semibold' fontsize='10'>LOCATION</run>
+          </formatted-text>
+        </zone>
+        <zone h='3464' id='33' type-v2='text' w='7045' x='1247' y='66859'>
+          <formatted-text>
+            <run bold='true' fontname='Segoe UI Semibold'>OUTLET SIZE</run>
+          </formatted-text>
+        </zone>
+        <zone h='14434' id='42' mode='radiolist' name='OUTLET LOCATION' param='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]' show-title='false' type-v2='filter' values='database' w='12594' x='748' y='52079' />
+        <zone h='13626' id='43' mode='radiolist' name='OUTLET SIZE' param='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]' show-title='false' type-v2='filter' values='database' w='12406' x='1185' y='71016' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2700' minheight='2700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='45' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98152' id='44' param='vert' type-v2='layout-flow' w='99002' x='499' y='924'>
+                <zone forceUpdate='true' h='8314' id='14' type-v2='text' w='13092' x='561' y='1732'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#000000' fontname='Segoe UI Black' fontsize='24'>Blink</run>
+                    <run fontalignment='1' fontcolor='#63be4f' fontname='Segoe UI Black' fontsize='24'>it</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='253' h='31871' id='19' is-fixed='true' name='FAT CONTENT' w='23504' x='13716' y='1732'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6467' id='20' leg-item-layout='vert' name='FAT CONTENT' pane-specification-id='0' param='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Item Fat Content:nk]' show-title='false' type-v2='color' w='7606' x='28741' y='2771'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='252' h='31755' id='21' is-fixed='true' name='FAT BY OUTLET' w='33292' x='37219' y='1732'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='64896' id='27' is-fixed='true' name='ITEM TYPE' w='29364' x='70511' y='1732'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='68' h='9469' id='15' is-fixed='true' name='TOTAL SALES' show-title='false' w='13092' x='561' y='10046'>
+                  <layout-cache fixed-size-h='74' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='60' h='8430' id='16' is-fixed='true' name='AVG RATING' show-title='false' w='13092' x='561' y='19515'>
+                  <layout-cache fixed-size-h='65' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='59' h='8430' id='17' is-fixed='true' name='AVG SALES' show-title='false' w='13092' x='561' y='27945'>
+                  <layout-cache fixed-size-h='65' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='13626' id='43' mode='dropdown' name='OUTLET SIZE' param='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]' show-title='false' type-v2='filter' values='database' w='12406' x='1185' y='71016'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='264' h='33256' id='22' is-fixed='true' name='OUTLET SIZE' w='23504' x='13716' y='33487'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11663' id='23' name='OUTLET SIZE' pane-specification-id='0' param='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]' type-v2='color' w='6671' x='30112' y='33487'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='14434' id='42' mode='dropdown' name='OUTLET LOCATION' param='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]' show-title='false' type-v2='filter' values='database' w='12594' x='748' y='52079'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='263' h='33141' id='24' is-fixed='true' name='OUTLET LOCATION' w='33292' x='37219' y='33487'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11663' id='25' name='OUTLET LOCATION' pane-specification-id='0' param='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]' type-v2='color' w='9102' x='61347' y='33603'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='63' h='8892' id='18' is-fixed='true' name='NO OF ITEMS' show-title='false' w='13092' x='561' y='36375'>
+                  <layout-cache type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3464' id='32' type-v2='text' w='6671' x='1122' y='48383'>
+                  <formatted-text>
+                    <run bold='true' fontname='Segoe UI Semibold' fontsize='10'>LOCATION</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='256' h='32217' id='26' is-fixed='true' name='OUTLET ESTABLISHMENT' w='42830' x='13716' y='66628'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='255' h='32102' id='29' is-fixed='true' name='OUTLET TYPE' w='43267' x='56546' y='66628'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3464' id='33' type-v2='text' w='7045' x='1247' y='66859'>
+                  <formatted-text>
+                    <run bold='true' fontname='Segoe UI Semibold'>OUTLET SIZE</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{073E8FE4-E87A-4819-A28A-73EEFDAE1A0C}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='TOTAL SALES'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{69E6E0B8-8B22-4A3F-8B7A-5D2E6566DA51}' />
+    </window>
+    <window class='worksheet' name='AVG RATING'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AD43E35B-20B6-49F8-8837-9D513028D451}' />
+    </window>
+    <window class='worksheet' name='AVG SALES'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1B6AD092-28BD-4027-B4E6-2E35E886B5C8}' />
+    </window>
+    <window class='worksheet' name='NO OF ITEMS'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2B8EB04F-2DAB-4D32-9CB2-47F4AE2777C0}' />
+    </window>
+    <window class='worksheet' name='FAT CONTENT'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Item Fat Content:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{E5973601-57E6-45DF-BAA0-034F44686909}' />
+    </window>
+    <window class='worksheet' name='FAT BY OUTLET'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Item Fat Content:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{82CA8EAA-3461-4CB1-9BD9-1357AB659944}' />
+    </window>
+    <window class='worksheet' name='ITEM TYPE'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{B39E2163-E624-443B-8399-F82903F4F2E9}' />
+    </window>
+    <window class='worksheet' name='OUTLET ESTABLISHMENT'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{9B247F77-50B6-433B-A124-9F3B9F0E8C29}' />
+    </window>
+    <window class='worksheet' name='OUTLET SIZE'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Size:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2BFE2908-E849-4EBD-A709-95E84ECB565C}' />
+    </window>
+    <window class='worksheet' name='OUTLET LOCATION'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1nqe15n10baakp1bdk4em11jkmed].[none:Outlet Location Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{0666C399-29C7-4AD0-AE53-72DD756E4715}' />
+    </window>
+    <window class='worksheet' name='OUTLET TYPE'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D58B1418-DDB5-4836-8760-3CAD414473D7}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='AVG RATING'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='AVG SALES'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='FAT BY OUTLET'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='FAT CONTENT'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='ITEM TYPE'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='NO OF ITEMS'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='OUTLET ESTABLISHMENT'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='OUTLET LOCATION'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='OUTLET SIZE'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='OUTLET TYPE'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='TOTAL SALES'>
+          <zoom type='fit-width' />
+        </viewpoint>
+      </viewpoints>
+      <active id='42' />
+      <simple-id uuid='{E55E8432-5D22-4E26-BC1E-D597E0CC5218}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
